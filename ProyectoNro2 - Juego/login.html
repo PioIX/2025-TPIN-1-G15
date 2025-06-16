@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/estilos-comunes.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="auth-buttons">
+      <button onclick="location.href='login.html'">INICIA SESIÓN</button>
+      <button onclick="location.href='register.html'">REGÍSTRATE</button>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+      <img src="assets/img/anuncio1.jpg" alt="Anuncio">
+      <img src="assets/img/anuncio2.jpg" alt="Anuncio">
+    </aside>
+    <div class="main-content">
+      <h1 class="logo">P A L A B R A</h1>
+      <div class="form-container">
+        <h2>Login</h2>
+        <form onsubmit="event.preventDefault(); alert('¡Sesión iniciada!'); location.href='menu.html';">
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">INICIAR SESIÓN</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/navbarScroll.js"></script>
+</body>
+</html>
