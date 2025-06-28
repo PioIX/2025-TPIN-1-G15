@@ -1,25 +1,6 @@
 Palabra
 
 ¡Bienvenido al proyecto Palabra!
----
-Estructura del repositorio
-
-Proyecto.../
-├── Assets/
-│   ├── Backgrounds/
-│   │   ├── clouds-4k-tu2l0is8o2uo74o5.png
-│   │   ├── VeniceBackground.jpg
-│   │   └── MountainBackground.png
-│   └── logopalabra.png
-├── css/
-│   ├── login.css
-│   ├── register.css
-│   └── menu.css
-├── js/
-│   └── navbarscroll.js
-├── login.html
-├── register.html
-├── menu.html
 
 ---
 Tecnologías
