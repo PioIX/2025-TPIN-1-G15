@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Menú Principal</title>
+  <link rel="stylesheet" href="../ProyectoNro2 - Juego/css/menu.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="auth-buttons">
+      <button onclick="location.href='login.html'">INICIA SESIÓN</button>
+      <button onclick="location.href='register.html'">REGÍSTRATE</button>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <!-- Lateral anuncios (ahora a la IZQUIERDA) -->
+    <aside class="sidebar">
+      <img src="assets/Anuncios/ironvolt-17.jpg" alt="Anuncio 1">
+      <img src="assets/Anuncios/4_cocaCola.jpg" alt="Anuncio 2">
+      <img src="assets/Anuncios/Puma.jpg" alt="Anuncio 3">
+    </aside>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+      <h1 class="logo">P A L A B R A</h1>
+      <a href="#" class="btn" onclick="alert('¡Sesión iniciada!')">DIARIO</a>
+      <a href="#" class="btn" onclick="alert('¡Sesión iniciada!')">INFINITO</a>
+      <a href="#" class="btn" onclick="alert('¡Sesión iniciada!')">HISTORIA</a>
+
+      <!-- Tabla de puntajes bajo los botones -->
+      <table class="table-ranking">
+        <thead>
+          <tr>
+            <th>ID</th><th>Usuario</th><th>Puntaje</th><th>Tiempo</th><th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>juanito_10</td><td>100</td><td>00:08:12</td><td>2025-06-08</td></tr>
+          <tr><td>2</td><td>flor22</td><td>80</td><td>00:07:57</td><td>2025-06-08</td></tr>
+          <tr><td>3</td><td>luis_messi</td><td>70</td><td>01:13:20</td><td>2025-06-08</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../ProyectoNro2 - Juego/js/navbarscroll.js"></script>
+</body>
+</html>
