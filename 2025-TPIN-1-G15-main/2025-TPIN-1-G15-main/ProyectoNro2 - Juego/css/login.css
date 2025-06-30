@@ -6,20 +6,20 @@
 }
 
 body {
-  background-image: url('../Assets/Backgrounds/VeniceBackground.jpg');
+  background-image: url('../Assets/Backgrounds/clouds-4k-tu2l0is8o2uo74o5.png');
   background-size: cover;
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
 }
 
 /* Enlaces */
-a,
 a:visited {
-  color: #fff;
+  color: #007bff;
   text-decoration: none;
 }
 a:hover {
   opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* Navbar: botón a la izquierda, logo a la derecha */
@@ -71,13 +71,16 @@ a:hover {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Formulario de registro */
+/* Formulario de login */
 .form-container {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+}
+.form-container h2 {
+  margin-bottom: 20px;
 }
 .form-container input {
   width: 100%;
