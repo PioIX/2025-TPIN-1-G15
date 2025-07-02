@@ -26,7 +26,7 @@ a:hover {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 60px;
-  background: rgba(0,0,0,0.7);
+  background-color:  rgb(27, 30, 44);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -46,7 +46,7 @@ a:hover {
   justify-content: flex-end;
 }
 .navbar .auth-buttons button {
-  background: #28a745;
+  background: #cfcfcf;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -87,12 +87,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   background: transparent;
   z-index: 500;
 }
 .sidebar img {
-  width: 100%;         /* ocupa todo el ancho de la sidebar */
+  width: 60%;         /* ocupa todo el ancho de la sidebar */
   height: auto;        /* mantiene proporción */
   object-fit: contain;
   background: none;
@@ -155,11 +155,11 @@ a:hover {
 
 /* off-screen-menu */
 .off-screen-menu {
-    background-color:  rgb(34, 37, 49);
-    height: 100vh;
+  background-color:  rgb(27, 30, 44, 0.89);
+    height: 40vh;
     width: 100%;
-    max-width: 450px;
-    position: fixed;
+    max-width: 350px;
+    position:fixed;
     top: 0;
     right: -450px;
     display: flex;
@@ -167,11 +167,21 @@ a:hover {
     align-items: center;    
     justify-content: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 30px;
     transition: .3s ease;
+    border-bottom-left-radius: 10%;
 }
 .off-screen-menu.active {
     right: 0;
+}
+
+.off-screen-menu ul li a {
+  color: white;
+}
+
+.off-screen-menu ul li a:hover {
+  text-decoration: underline;
+  color: skyblue;
 }
 
 
@@ -195,7 +205,7 @@ nav {
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: #6F86FF;
+    background-color: #cfcfcf;
     border-radius: 25px;
     position: absolute;
     left: 50%;
