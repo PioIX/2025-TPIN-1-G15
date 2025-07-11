@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Registro</title>
+  <link rel="stylesheet" href="../ProyectoNro2 - Juego/css/register.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="auth-buttons">
+    <button onclick="location.href='menu.html'">MENU</button>    
+  </div>
+  <div class="navlogo">
+      <img src="Assets/logopalabra.png" alt="logo">
+    </div>
+  </nav>
+  
+
+  <div class="wrapper">
+    <div class="main-content">
+      <h1 class="logo">R E G I S T R A T E</h1>
+      <div class="form-container">
+        <form onsubmit="event.preventDefault(); alert('Registro completado'); location.href='menu.html';">
+          <input type="text" placeholder="Nombre de usuario" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">REGISTRARSE</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/navbarScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
