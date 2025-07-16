@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pantalla de Juego - PALABRA</title>
+  <style>
+    body {
+      background: #0e1628;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .logo {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .imagenes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .imagenes img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .pista {
+      background: #213654;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .respuesta {
+      width: 60%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">PALABRA</div>
+  
+  <div class="imagenes">
+    <img src="assets/img/cabra.jpg" alt="Cabra">
+    <img src="assets/img/polvo.jpg" alt="Polvo">
+    <img src="assets/img/estrellas.jpg" alt="Estrellas">
+    <img src="assets/img/botines.jpg" alt="Botines">
+  </div>
+  
+  <div class="pista">Jugador de fútbol</div>
+  
+  <input class="respuesta" type="text" placeholder="Respuesta">
+</body>
+</html>
