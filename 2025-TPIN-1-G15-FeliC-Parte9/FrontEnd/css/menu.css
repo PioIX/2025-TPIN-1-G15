@@ -1,0 +1,303 @@
+/* Reset y tipografía */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/Assets/Backgrounds/clouds-4k-tu2l0is8o2uo74o5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  
+}
+
+/* Enlaces */
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* Navbar fija y oculta/visible */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 60px;
+  background-color:  rgb(27, 30, 44);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+.nav-hidden {
+  top: -80px;
+}
+
+/* Botones sesión/registro en nav */
+.navbar .auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.navbar .auth-buttons button {
+  background: #cfcfcf;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+.navbar .auth-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Logo en navbar */
+.navlogo {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.navlogo img {
+  height: 60px;
+}
+
+/* Contenedor general */
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 60px; /* espacio para navbar */
+}
+
+/* Sidebar de anuncios fixo a la izquierda */
+.sidebar {
+  grid-area: anuncios;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 260px;        /* antes 200px */
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* overflow-y: auto; */
+  background: transparent;
+  z-index: 500;
+}
+.sidebar img {
+  width: 60%;         /* ocupa todo el ancho de la sidebar */
+  height: auto;        /* mantiene proporción */
+  object-fit: contain;
+  background: none;
+  border-radius: 4px;
+}
+
+/* Ajusto el contenido principal para el nuevo ancho */
+.main-content {
+  grid-area: main;
+  margin-left: 300px;  /* sidebar (260) + padding lateral (20*2) */
+  flex: 1;
+  padding: 20px 250px 20px 150px;
+}
+
+/* Logo cabecera */
+.logo {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: .5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Botones generales */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Tabla de puntajes */
+.table-ranking {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+.table-ranking th,
+.table-ranking td {
+  border: 1px solid #616161;
+  padding: 8px;
+  text-align: center;
+  color: #000
+}
+.table-ranking th {
+  background: rgba(0, 0, 0, 0.2);
+  color: #000
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+  background-color:  rgb(27, 30, 44, 0.89);
+    height: 40vh;
+    width: 100%;
+    max-width: 350px;
+    position:fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    transition: .3s ease;
+    border-bottom-left-radius: 10%;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+
+.off-screen-menu ul li a {
+  color: white;
+}
+
+.off-screen-menu ul li a:hover {
+  text-decoration: underline;
+  color: skyblue;
+}
+
+
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(34, 37, 49);
+}
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #cfcfcf;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 20px 150px 20px 50px;
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-content {
+    padding: 20px 150px 20px 150px;
+    margin-left: 0;
+  }
+  .sidebar {
+    flex-direction: row;
+  }
+  .body {
+    
+  }
+}
+
+@media (max-width: 850px) {
+  .main-content {
+    padding: 20px 100px 20px 100px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-content {
+    padding: 20px 50px 20px 50px;
+    margin-left: 0;
+  }
+  .logo {
+    font-size: 35px;
+  }
+}
+@media (max-width: 650px) {
+  .main-content {
+    padding: 20px 50px 20px 50px;
+    margin-left: 0;
+  }
+  .logo {
+    font-size: 30px;
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .body {
+    height: 115vh;
+  }
+}
