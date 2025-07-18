@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>4 Fotos 1 Palabra</title>
+  <title>4 Fotos 1 Palabra - Diario</title>
   <link rel="stylesheet" href="../../FrontEnd/css/juego.css">
 </head>
 <body>
+  <div class="off-screen-menu" id="off-screen-menu">
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
 
   <nav class="navbar">
     <div class="auth-buttons">
+      <button onclick="location.href='index.html'">MENU</button>
       <button onclick="location.href='login.html'">INICIA SESIÓN</button>
       <button onclick="location.href='register.html'">REGÍSTRATE</button>
+      
     </div>
     <div class="ham-menu" id="ham-menu">
         <span></span>
@@ -20,7 +29,7 @@
     </div>
   </nav>
 
-  <div class="logo">PALABRA</div>
+  <h1 class="logo">D I A R I O</h1>
   
   <div class="imagenes">
     <img src="../../Assets/Juego/cabragoat.jfif" alt="Cabra">
@@ -30,8 +39,14 @@
   </div>
 
   
-  <input class="respuesta" type="text" placeholder="Respuesta"><div class="pista">Pista</div>
+  <input class="respuesta" type="text" placeholder="Respuesta"><button class="pista">Pista</button><br>
   
-  <div class="pista">Enviar</div>
+  <div class="Enviar">
+    <button> Enviar </button>
+  </div>
+
+  <script src="../js/navbarscroll.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -6,12 +6,11 @@
 }
 
 body {
-  background-image: url('/Assets/Backgrounds/clouds-4k-tu2l0is8o2uo74o5.png');
+  background-image: url('../../Assets/Backgrounds/clouds-4k-tu2l0is8o2uo74o5.png');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
-  
 }
 
 /* Enlaces */
@@ -262,9 +261,6 @@ nav {
   }
   .sidebar {
     flex-direction: row;
-  }
-  .body {
-    
   }
 }
 

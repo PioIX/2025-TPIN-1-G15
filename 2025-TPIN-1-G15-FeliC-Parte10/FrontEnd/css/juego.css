@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #0e1628;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px 100px 100px 100px;
+}
+.logo {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: fit-content;
+  padding-bottom: 40px;
+}
+.imagenes img {
+  width: 350px;
+  height: 250px;
+  border-radius: 5%;
+}
+.pista {
+  background: #213654;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.respuesta {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+.logo {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: .5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Enlaces */
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* Navbar fija y oculta/visible */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 60px;
+  background-color:  rgb(27, 30, 44);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+.nav-hidden {
+  top: -80px;
+}
+
+/* Botones sesión/registro en nav */
+.navbar .auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.navbar .auth-buttons button {
+  background: #cfcfcf;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+.navbar .auth-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Logo en navbar */
+.navlogo {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.navlogo img {
+  height: 60px;
+}
+
+
+.enviar .pista {
+  display: flex;
+  gap: 10px;
+  margin-left: 0;
+  justify-content: flex-end;
+}
+.enviar .pista{
+  background: #cfcfcf;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+.navbar .auth-buttons button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #cfcfcf;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+
+
